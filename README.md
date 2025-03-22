@@ -15,6 +15,22 @@ cd dobot-python
 python3 lib/test.py
 ```
 
+##### Environment Configuration
+
+This project uses python-dotenv for environment variable management. To configure your environment:
+
+1. Copy the example environment file:
+```Bash
+cp .env.example .env
+```
+
+2. Edit the `.env` file to match your configuration:
+```
+DOBOT_SERIAL_PORT=/dev/your-serial-port
+```
+
+The configuration will be automatically loaded when importing the config module.
+
 **Low-level interface**
 ```python
 interface = Interface('/dev/tty.usbserial-0001')
