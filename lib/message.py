@@ -1,4 +1,4 @@
-from lib.parsers import parsers
+from .parsers import parsers
 
 
 class Message:
