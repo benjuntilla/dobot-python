@@ -58,7 +58,7 @@ parsers = {
     84: [None, None, lambda x: struct.unpack('<Q', bytearray(x))[0], lambda x: list(struct.pack('<Bffff', *x))],
     85: [lambda x: struct.unpack('<' + 'f' * 2, bytearray(x)), None, lambda x: struct.unpack('<Q', bytearray(x))[0], lambda x: list(struct.pack('<' + 'f' * 2, *x))],
     86: [None, None, lambda x: struct.unpack('<Q', bytearray(x))[0], lambda x: list(struct.pack('<Bfffff', *x))],
-    87: [lambda x: struct.unpack('<' + 'f' * 3, bytearray(x)), None, lambda x: struct.unpack('<Q', bytearray(x))[0], lambda x: list(struct.pack('<' + 'f' * 3, *x))],
+    87: [lambda x: (), None, lambda x: struct.unpack('<Q', bytearray(x))[0], lambda x: list(struct.pack('<' + 'f' * 3, *x))],
     88: [None, None, lambda x: struct.unpack('<Q', bytearray(x))[0], lambda x: list(struct.pack('<Bffff', *x))],
     89: [None, None, lambda x: struct.unpack('<Q', bytearray(x))[0], lambda x: list(struct.pack('<Bfffff', *x))],
     # Continuous path
